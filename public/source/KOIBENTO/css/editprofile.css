@@ -1,0 +1,112 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Roboto Slab', serif;
+}
+h1, h2, h3, h4, h5, h6{
+	margin:0;
+	padding:0;
+}
+
+.edit-profile {
+    display: block;
+    padding: 50px 0;
+}
+
+.edit-profile h3 {
+	display:block;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+	padding-bottom:20px;
+    text-transform: capitalize;
+	text-align:center;
+    color: #000;
+}
+
+.text-center h5{
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+	padding:20px 0;
+	color:#333;
+}
+
+.edit-file {
+    margin: auto;
+    display: block;
+    border: 1px solid #c0c0c0;
+    padding: 10px;
+    background: #f5f3f3;
+    text-align: center;
+}
+
+.personal-info{
+	display:block;
+	padding:0 20px;
+}
+
+.personal-info h4 {
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    color: #333;
+    text-transform: capitalize;
+    padding: 20px 0;
+}
+
+label{
+	margin:0;
+}
+.form-group{
+	margin:0;
+}
+button.change {
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: #f00;
+    border: 1px solid #f00;
+}
+.form-group>.change:hover{
+    background: #e83d3d;
+}
+.form-group a {
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 10px;
+    background: #000;
+    border: 1px #000 solid;
+    border-radius: 5px;
+    display: inline-block;
+}
+label {
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #333;
+    display: block;
+	padding:10px 0;
+}
+
+#name, #password, #email, #phone, #address {
+	display:block;
+	width:80%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    padding: 5px 10px;
+    text-transform: capitalize;
+	border-radius: 2px;
+}
+
+#male, #female, #other{
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+	margin-left:20px;
+
+}
+
+#address {
+    margin-bottom: 30px;
+}

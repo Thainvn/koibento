@@ -1,0 +1,269 @@
+
+/*phan detail*/
+
+.detail{
+	display:block;
+	padding:80px 0;
+	background-image:url("../images/bg2.png");
+}
+.content-detail {
+    display: block;
+}
+
+.content-detail h4 {
+    display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    color: #333;
+    padding-bottom: 10px;
+	font-weight:bold;
+}
+.content-detail span {
+	display:block;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 21px;
+    color: #f33;
+	padding-bottom:20px;
+}
+
+.content-detail p {
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    color: #333;
+}
+
+.quantity {
+    padding-top: 20px;
+    display: block;
+}
+
+.cart_quantity,.add_more_product {
+    width: 60px;
+	height:40px;
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+	position:relative;
+	border-radius: 5px;
+	border: 1px solid #cacaca;
+}
+
+.up, .down,.sub_product,.add_product{
+    width: 30px;
+	height:40px;
+    font-size: 16px;
+    background: #f33;
+    border: transparent;
+    color: #fff;
+}
+
+#add-to-cart {
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    background: #cf2424;
+    color: #fff;
+    border: transparent;
+    position: absolute;
+    top: 47px;
+    left: 137px;
+}
+
+
+/*san pham co lien quan*/
+
+.products{
+	display:block;
+	padding:0 0 80px;
+}
+
+.products h4 {
+    display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 28px;
+    color: #ce1e1e;
+  
+	text-transform:uppercase
+}
+
+.nav-tabs {
+    border-bottom: 1px solid transparent;
+}
+.list-menu{
+	text-align: center;
+}
+.list-menu span {
+    display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    padding: 5px 0;
+    width: 113px;
+    height: 35px;
+    border-radius: 30px 30px 0 0;
+    color: #fff;
+    background: #f33;
+    position: absolute;
+    top: 56%;
+    right: 126px;
+}
+.list-menu h5{
+    padding-top: 20px;
+}
+.list-menu h5 a {
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    color: #333;
+    font-weight: 650;
+}
+
+
+.sub-menucon ul{
+	display:inline-block;
+}
+
+.sub-menucon ul li a{
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+	color:#f33;
+	border:2px solid #f33;
+	padding:5px;
+	text-transform:uppercase;
+	border-radius:5px;
+	margin: 10px;
+}
+.sub-menucon ul li a:hover{
+    color:#fff;
+    background-color: f33;
+}
+
+.checkout{
+	position:relative;
+}
+.checkout:hover .check{
+	display:block;
+}
+
+.check{
+	display:none;
+	position:absolute;
+}
+.check a{
+	border:none !important;
+	text-transform:capitalize !important;
+	font-size:16px;
+}
+
+
+/*phan footer*/
+.bottom{
+	display: block;
+    background: #000;
+	padding:80px 0;
+}
+
+.address h4, .flow h4, .time h4{
+	font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: #f33;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+}
+.address p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    color: #fff;
+}
+
+/*phần flow*/
+
+.menu-flow ul{
+	display:block;
+}
+.menu-flow ul li a {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:15px;
+	color:#fff;
+	padding-bottom:10px;
+}
+.menu-flow ul li a i{
+	color:#fff;
+	font-size:20px;
+	padding-right:10px;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: #f33;
+}
+
+/*phần time*/
+
+.time h4{
+	text-align:center;
+}
+.opening-schedule{
+	display:block;
+}
+.opening-schedule ul li, .opening ul li {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:15px;
+	color:#fff;
+	padding-bottom:10px;
+}
+
+.opening ul li {
+	text-align:right;
+}
+.opening ul li:nth-child(6), .opening ul li:nth-child(7){
+	color:#f33;
+}
+
+/*het phan footer*/
+
+.writer{
+	display: block;
+	background: #d11d1d;
+    padding: 10px 0;
+}
+.writer p{
+	font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* scrollup */
+
+.scrollup{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    opacity: .3;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #000;
+    z-index: 1000;
+    transition: opacity .5s, background-color .5s;
+    -moz-transition: opacity .5s, background-color .5s;
+    -webkit-transition: opacity .5s, background-color .5s;
+}
+
+.scrollup:hover {
+    background: #e74c3c;
+    opacity: 1;
+}
+
+.scrollup i {
+    font-size: 13px;
+    position: absolute;
+    opacity: 1;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    margin-top: -7px;
+    margin-left: -6px;
+    text-decoration: none;
+
+}

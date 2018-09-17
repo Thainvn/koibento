@@ -1,0 +1,88 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Roboto Slab', serif;
+}
+h1, h2, h3, h4, h5, h6{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration:none;
+}
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: none;
+}
+
+.user-profile {
+    display: block;
+    padding: 50px 0;
+}
+
+.user-profile h3 {
+	display:block;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+	padding-bottom:20px;
+    text-transform: capitalize;
+	text-align:center;
+    color: #000;
+}
+
+.avatar.img-circle {
+    padding-bottom: 33px;
+}
+
+#add-friends, #message{
+	display:inline-block;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+	text-transform:capitalize;
+}
+
+.profile-user-info {
+    display: table;
+    width: 98%;
+    width: calc(100% - 24px);
+    margin: 0 auto
+}
+
+.profile-info {
+    display: table-row;
+}
+
+.name, .age, .phone, .email, .gender, .address, .facbook, .twitter,
+.profile {
+    display: table-cell;
+    border-top: 1px dotted #D5E4F1
+}
+
+.name, .age, .phone, .email, .gender, .user_address, .facbook, .twitter {
+    padding: 6px 10px 6px 4px;
+    font-weight: 400;
+    color: #667E99;
+    background-color: transparent;
+    width: 110px;
+    text-align:left;
+	text-transform:capitalize;
+	font-size:18px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.profile {
+    padding: 6px 4px 6px 6px;
+	text-transform:capitalize;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:17px;
+}
+
+.facbook i, .twitter i {
+    font-size: 25px;
+    display: block;
+    text-align: center;
+
+}

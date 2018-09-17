@@ -1,0 +1,388 @@
+
+/*phan thong tin*/
+
+.information {
+	display:block;
+    padding: 80px 0;
+	background-image:url("../images/bg2.png");
+}
+
+.img {
+    max-width: 100%;
+}
+.infor h3 {
+	font-family: 'Source Sans Pro', sans-serif;
+    display: block;
+    font-size: 40px;
+    color: #333;
+    padding-bottom: 20px;
+	font-weight:bold;
+}
+.infor span {
+    display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+.setplem{
+	width: 50px;
+    height: 3px;
+    border: 2px solid #f33;
+    background: #f33;
+	margin:10px 0 20px;
+}
+.infor p{
+	display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+	color: #908383;
+	padding-bottom:60px;
+}
+
+.myProgress {
+  width: 100%;
+  background-color: #ddd;
+    margin-bottom:30px;
+
+}
+
+.myBar {
+
+  height: 30px;
+  background-color: #f33;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+
+
+.percent h4{
+	padding-bottom:25px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color:#f33;
+	text-transform:capitalize;
+}
+.percent h5{
+	padding-bottom:15px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	color:#333;
+}
+
+.flow1 {
+    display: block;
+    padding-top: 37px;
+}
+
+.flow1 h4 {
+   font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    color: #f33;
+    text-transform: uppercase;
+    display: block;
+}
+
+.icon-flow ul li a {
+    font-size: 20px;
+    border: 1px solid #cacaca;
+    padding: 5px 15px;
+    color: #333;
+}
+/*end skill*/
+
+/*phan other*/
+
+.other {
+    display: block;
+    padding: 100px 0;
+	background: #fcf6f6;
+}
+
+.other h4 {
+	 display: block;
+   font-family: 'Source Sans Pro', sans-serif;
+    font-size: 27px;
+    color: #333;
+	text-transform:uppercase;
+	padding-bottom: 50px;
+}
+
+.details {
+    background: #f33;
+    width: 100%;
+    height: auto;
+	padding:20px 0;
+	text-align:center;
+}
+
+.details h5 {
+    padding-bottom: 20px;
+}
+
+.details h5 a {
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 28px;
+    color: #fff;
+	text-transform:capitalize;
+}
+.details p {
+    font-size: 16px;
+    color: #fff;
+	padding-bottom:20px;
+}
+
+.sBtn06 {
+   max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+	margin:10px 5px;
+	max-width:32.444%;
+}
+.sBtn06 img {
+    max-width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.sBtn06:hover .details{
+	background:#333;
+}
+
+.sBtn06 .list-container {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+   
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    -moz-transform: perspective(400px) rotateX(90deg);
+    -ms-transform: perspective(400px) rotateX(90deg);
+    -o-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    -webkit-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    -ms-transform-origin: bottom;
+    -o-transform-origin: bottom;
+    transform-origin: bottom;
+}
+.sBtn06 .list-container .btn-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+    display: block;
+    text-align: center;
+	font-size:20px;
+}
+.sBtn06 .list-container .btn-list li {
+    display: inline-block;
+}
+.sBtn06 .list-container .btn-list li .fa {
+    color: #fff;
+    display: inline-block;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    width: 35px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.sBtn06:hover .list-container {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    -moz-transform: perspective(400px) rotateX(0deg);
+    -ms-transform: perspective(400px) rotateX(0deg);
+    -o-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+}
+
+
+/*phan footer*/
+.bottom{
+	display: block;
+    background: #000;
+	padding:80px 0;
+}
+
+.address h4, .flow h4, .time h4{
+	font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: #f33;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+}
+.address p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    color: #fff;
+}
+
+/*phần flow*/
+
+.menu-flow ul{
+	display:block;
+}
+.menu-flow ul li a {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:15px;
+	color:#fff;
+	padding-bottom:10px;
+}
+.menu-flow ul li a i{
+	color:#fff;
+	font-size:20px;
+	padding-right:10px;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    color: #f33 ;
+}
+
+/*phần time*/
+
+.time h4{
+	text-align:center;
+}
+.opening-schedule{
+	display:block;
+}
+.opening-schedule ul li, .opening ul li {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:15px;
+	color:#fff;
+	padding-bottom:10px;
+}
+
+.opening ul li {
+	text-align:right;
+}
+.opening ul li:nth-child(6), .opening ul li:nth-child(7){
+	color:#f33;
+}
+
+/*het phan footer*/
+
+.writer{
+	display: block;
+	background: #d11d1d;
+    padding: 10px 0;
+}
+.writer p{
+	font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* scrollup */
+
+.scrollup{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    opacity: .3;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #000;
+    z-index: 1000;
+    transition: opacity .5s, background-color .5s;
+    -moz-transition: opacity .5s, background-color .5s;
+    -webkit-transition: opacity .5s, background-color .5s;
+}
+
+.scrollup:hover {
+    background: #e74c3c;
+    opacity: 1;
+}
+
+.scrollup i {
+    font-size: 13px;
+    position: absolute;
+    opacity: 1;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    margin-top: -7px;
+    margin-left: -6px;
+    text-decoration: none;
+
+}
+.login-content {
+  margin: 100px 0;
+}
+.login-form {
+  background: #ffffff;
+  padding: 30px 30px 20px;
+  border-radius: 2px;
+}
+.login-form h4 {
+  color: #455a64;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.login-form .checkbox {
+  color: #455a64;
+}
+.login-form .checkbox label {
+  text-transform: none;
+}
+.login-form .btn {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 15px;
+  border: 0px;
+  margin-left: 0;
+}
+.btn-flat{
+    background: #f33 !important;
+    padding: 0 15px !important;
+}
+.login-form label {
+  color: #455a64;
+  text-transform: uppercase;
+}
+.login-form label a {
+  color: #4680ff;
+}
+.card {
+    background: #ffffff none repeat scroll 0 0;
+    margin: 15px 0;
+    margin-top: 15px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    padding: 20px;
+    border: 0 solid #e7e7e7;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,0.15);
+}
+.form-control {
+    height: 42px;
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #e7e7e7;
+    font-family: 'Poppins', sans-serif;
+}

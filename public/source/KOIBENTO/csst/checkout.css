@@ -1,0 +1,339 @@
+ul{
+    list-style: none;
+}
+
+/*phần checkout*/
+
+
+.login{
+	max-width:100%;
+	height:60px;
+	border-top:2px solid #f33;
+}	
+.login h4{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:18px;
+	color:#333;
+	line-height:60px;
+}
+
+.login h4 a{
+	color:#f33;
+}
+
+.fa-square-o{
+	padding:10px;
+	font-size:20px;
+	color:#f33;
+}
+#name {
+    margin-bottom: 20px;
+}
+
+.content-login {
+	padding: 20px;
+	display:block;
+	background: #f6f0f0;
+}
+
+.content-login h5{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:15px;
+	color:#333;
+	padding-left:10px;
+}	
+
+#login {
+	font-family: 'Source Sans Pro', sans-serif;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #d11d1d;
+    background: #d11d1d;
+    color: #fff;
+    font-size: 16px;
+	text-transform:capitalize;
+	display:block;
+}
+.check {
+    position: relative;
+    top: -49px;
+    left: 112px;
+	padding-bottom:0;
+	display:block;
+}
+.radio-inline{
+	padding-top: 0;
+}
+/*phan thanh toan*/
+	
+.bill_detail {
+    display: block;
+	margin:50px 0;
+}
+.content-details h4, .additional h4 {
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 26px;
+    color: #f33;
+}
+
+form {
+    display: block;
+   
+}
+label {
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    text-transform: capitalize;
+	padding-top:20px ;
+	padding-bottom:10px;
+	color:#333;
+}
+
+#firstname, #lastname, #company, #address, #town, #state, #phone, #email{
+    font-family: 'Roboto Slab', serif;
+    max-width: 100% ;
+    height: 40px;
+    border-radius: 1px;
+    font-size: 14px;
+    text-transform: capitalize;
+	border:1px solid #cacaca;
+	color:#333;
+}
+
+.additional {
+	display:block;
+    margin-left: 35px;
+    max-width: 47%;
+
+}
+ #notes{
+    font-family: 'Roboto Slab', serif;
+    max-width: 100%;
+	 border-radius: 1px;
+    font-size: 14px;
+    text-transform: capitalize;
+	border:1px solid #cacaca;
+	color:#333;
+ }
+ .btn-primary {
+    width: 140px;
+    height: 40px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+	color: #fff;
+    display: block;
+    border: 2px solid transparent;
+    margin:0 auto;
+    background: #d11d1d;
+	text-transform:uppercase;
+}
+
+.btn-primary:hover{
+    color: #fff;
+    background-color: #d81919;
+    border:transparent;
+}
+
+.btn-primary:active{
+    color: #fff;
+    background-color: #d81919;
+    border:transparent;
+}
+
+@media screen and (max-width: 1199px) {
+    .additional{
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .additional{
+        margin-left: 10px;
+    }
+    .content-details h4, .additional h4 {
+        font-size: 24px;
+    }
+    .up, .down {
+        width: 19px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .orders caption {
+        font-size: 22px;
+    }
+    .menu-order {
+        font-size: 18px;
+    }
+    .order h4 {
+        font-size: 16px;
+    }
+    td, th {
+        padding: 0px;
+    }
+    .sub_total caption {
+        font-size: 22px;
+
+    }
+
+}
+
+
+/*phan order*/
+
+.order{
+	display:block;
+	padding:50px 0;
+}
+.order h4{
+	display: block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 26px;
+    color: #f33;
+	padding-bottom:20px;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #cacaca;
+    width: 20%;
+}
+
+.product-total, .order-total, .cart-subtotal {
+    text-align: center;
+   
+   
+}
+.order-total{
+    font-weight: 650;
+     
+      font-size: 20px;
+}
+.price{
+    font-size :18px;
+ 
+}
+#orders {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    border: 1px solid #cacaca;
+    display: block;
+    margin-top: 20px;
+	padding:5px;
+	background:#d11d1d;
+}
+
+
+.your-order-body {
+    padding: 30px 40px 50px;
+
+}
+ .payment_box {
+    background: #f8f8f8;
+    margin-left: 17px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.checkout_media{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .cart_total {
+      font-size: 15px;
+  }
+  .product-name h4 a {
+    font-size: 12px;
+  }
+  .price-cart {
+    font-size: 13px;
+}
+
+
+@media screen and (max-width: 360px) {
+    .promotion {
+        padding:25px 0;
+    }
+    .sub_total caption {
+        font-size:20px;
+    }
+    .sub_total th {
+        font-size: 15px;
+    }
+    .sub_total td p {
+        font-size:14px;
+    }
+    .check a{
+        font-size:14px;
+    }
+}
+
+
+
+.shoppe{
+    margin: 20px auto;
+    width: 401px;
+    padding: 100px 0;
+
+}
+
+.shoppe img {
+    margin: auto;
+}
+
+.shopping{
+    display: block;
+    width: 195px;
+    height: 50px;
+    border: 1px solid transparent;
+    margin: 20px auto;
+    line-height: 50px;
+    text-align: center;
+    background: #f33;
+    color: #fff;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 20px;
+}
+
+.shopping:hover{
+    background: #bd221a;
+    color:#fff;
+}
+
+.text-center{
+    font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color:#333;
+
+}
+
+@media screen and (max-width: 991px) {
+    .text-center{
+            font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .text-center{
+         font-size: 24px;
+    }
+    .shoppe {
+        margin: auto;
+        width: 100%;
+        padding: 50px 0;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .text-center{
+            font-size: 17px;
+
+    }
+
+}
