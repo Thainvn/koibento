@@ -18,6 +18,7 @@ use DB;
 use App\User;
 use Auth;
 use App\distanceFinder;
+use App\ContactUs;
 class userController extends Controller
 {
 
@@ -334,28 +335,30 @@ class userController extends Controller
             $order_detail->product_id = $key;
             $order_detail->quanity = $value['qty'];
             $order_detail->unit_price = ($value['price'])/$value['qty'];
+
             $order_detail->save();
         }
         Session::forget('cart');
         // send email to admin
-        //$data = array('name'=>"Thai Nguyen", "body" => "Mot don hang moi,hay kiem tra ngay");
+        $data = array('name'=>"Thai Nguyen", "body" => "Mot don hang moi,hay kiem tra ngay");
         
             
         
-        // Mail::send('user.mail', $data, function($message) {
+        Mail::send('user.mail', $data, function($message) {
         
-        //     $message->to('minhnhoban0707@gmail.com', 'nguyen thai')
+            $message->to('vnibka.pasal@gmail.com')
         
-        //             ->subject('Thong bao don hang');
+                    ->subject('Thong bao don hang');
         
-        //     $message->from('vnibka.pasal@gmail.com','To master English');
+            $message->from('minhnhoban0707@gmail.com','Admin');
         
-        // });
+        });
 
 
         Session::flash('message',"Order successfully");
     	return redirect()->back();
     }
+
 
 
      public function search(Request $req){
@@ -366,28 +369,61 @@ class userController extends Controller
 
 
      public function contact(){
-        $data = array('name'=>"Thai Nguyen", "body" => "Mot don hang moi,hay kiem tra ngay");
-        
-            
-        
-        // Mail::send('user.mail', $data, function($message) {
-        
-        //     $message->to('minhnhoban0707@gmail.com', 'nguyen thai')
-        
-        //             ->subject('Thong bao don hang');
-        
-        //     $message->from('vnibka.pasal@gmail.com','To master English');
-        
-        // });
+               
 
     	return view('user.contact');
     }
 
+
+    // execute to save message through contact form
+    public function postContact(Request $req){
+        $this->validate($req,
+            [
+                'name' => 'required',
+                'email' => 'required|email',
+                'message' => 'required',
+            ],
+            [
+                'name.required' => 'Name is required',
+                'email.required' => 'Email is required',
+                'email.email' => 'Email is invalid .Please enter your valid email',
+                'message.required' => 'Message is required',
+            ]
+            );
+        // use mass-assignment
+        ContactUs::create($req->all());
+
+        // send email to admin
+        $data = array(
+
+                'name' => $req->get('name'), 
+                'email' => $req->get('email'),
+                'user_message' => $req->get('message')
+            );
+        
+            
+        
+        Mail::send('emails.mailContact', $data, function($message) {
+        
+            $message->to('vnibka.pasal@gmail.com')
+        
+                    ->subject('Thong bao tin nhan');
+        
+            $message->from('minhnhoban0707@gmail.com','Admin');
+        
+        });
+
+        return back()->with('message','Thank you for sending message');
+    }
+
+
+    // get infomation about website
      public function about(){
         $employee = Employee::all();
     	return view('user.about',compact('employee'));
     }
 
+    // get detail information about employee
      public function getDetailEmployee($id){
 
         $employee = Employee::where('id',$id)->get();
@@ -426,8 +462,7 @@ class userController extends Controller
                'address' => 'required'
            ],
            [
-               
-             
+                          
                'fullname.required' => "Fullname is required",
                'fullname.regex' => "Fullname is invalid",
                'gender.required' => "Gender is required",
@@ -474,21 +509,26 @@ class userController extends Controller
         return view()->route('user_profile');
     }
 
+    // display error page
     public function page_error_403(){
 
         return view('user.page-error-403');
     }
 
+    //  calculate fee ship
     public function calFeeShip($address){
 
 
         $df = new distanceFinder("Car Drive");
         $result = $df->findDistance("Tầng 2, nhà B, Khu VL1, Trung tâm Thương mại Dịch vụ Trung Văn 1, Q. Nam Từ Liêm,Hà Nội", "$address");
 
+
         if (isset($result['error'])) {
 
-            Session::flash('message',"Fail");
-            return redirect()->back();
+            echo "Fail";
+
+            // Session::flash('message',"Fail");
+            // return redirect()->back();
 
         } else {
           

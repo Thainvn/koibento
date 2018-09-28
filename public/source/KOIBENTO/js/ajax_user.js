@@ -222,23 +222,23 @@ $(document).ready(function() {
                 success: function (data) {
                                      
                    
-                if(data['fee']){
+                    if(data['fee']){
 
-                   
-                   $("#feeShip").text(data['fee']);
-                    $("#fee_ship").val(data['fee']);
-                   
-                   var price =$("#demoPrice").text() ;
-                
-                   var totalPrice = parseInt(data['fee']) + parseInt(price);
-                   
-                   $("#total_price").text(totalPrice);
-                   
-                  
+                       
+                       $("#feeShip").text(data['fee']);
+                        $("#fee_ship").val(data['fee']);
+                       
+                       var price =$("#demoPrice").text() ;
+                    
+                       var totalPrice = parseInt(data['fee']) + parseInt(price);
+                       
+                       $("#total_price").text(totalPrice);
+                       
+                      
 
-                }else{
-
-                 }
+                    }else{
+                        window.location =  url+'page-error-403';
+                    }
                    
                 },
                 error: function (data) {
@@ -267,7 +267,7 @@ $(document).ready(function() {
                                       
                     if(data['fee']){
 
-                                           
+                                            
                         
                         $("#feeShip").text(data['fee']);
                         $("#fee_ship").val(data['fee']);

@@ -14,6 +14,9 @@
 		
 		<div class="contact">
 			<div class="container">
+				@if(Session::has('message'))
+					<div class="alert alert-success">{{Session::get('message')}}</div>
+				@endif
 				<div class="row">
 					<div class="col-md-4 col-sm-4 col-xs-12 informaition">
 						<h4>INFORMATION</h4>
@@ -71,20 +74,50 @@
 						<h4>SEND US A MASSEGE</h4>
 						<div class="setplem"></div>
 						<div class="content-form">
-							<form action="#" method="post">
+							<form action="{{Route('post_contact')}}" method="post">
+									<input type="hidden" name="_token" value="{{csrf_token()}}">
 								<div class="row">
+
 									<div class="col-md-6 col-sm-6 col-xs-12 ">
-										<input type="text" class="form-control" id="name" placeholder="Name *" required>
+										<div class="form-group {{$errors->has('name') ? 'has-error' : '' }}">
+
+											@if ($errors->has('name'))
+		                                        <span class="help-block">
+		                                        	<strong>
+		                                        		{{ $errors->first('name') }}
+		                                        	</strong>
+		                                        </span>
+		                                    @endif
+		                                    <input type="text" name="name" class="form-control" id="name" placeholder="Name *" >
+										</div>
+										
 									</div>
 									
 									<div class="col-md-6 col-sm-6 col-xs-12 ">
-										<input type="text" class="form-control" id="email" placeholder="email *" required>
+										<div class="form-group {{$errors->has('email') ? 'has-error' : '' }}">
+											@if($errors->has('email'))
+												<span class="help-block"><strong>{{$errors->first('email')}}</strong></span>
+											@endif
+											<input type="text"  name="email" class="form-control" id="email" placeholder="email *" >
+										</div>
+										
 									</div>
 								</div>
 								
-								<input type="text" class="form-control" id="subject" placeholder="subject *" required>
-								 <textarea class="form-control" rows="6" id="message"placeholder="message *" required></textarea>
-								 <button type="submit" class="send">send</button>
+								
+								<div class="form-group {{$errors->has('message') ? 'has-error' : '' }}">
+									@if($errors->has('message'))
+										<span class="help-block">
+											<strong>
+												{{$errors->first('message')}}
+											</strong>
+										</span>
+									@endif
+									<textarea class="form-control" name="message" rows="6" id="message"placeholder="message *" ></textarea>
+								</div>
+								
+
+								<button type="submit" class="send">send</button>
 		
 							</form>
 						</div>
