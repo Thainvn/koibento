@@ -147,6 +147,7 @@
 		Route::get('search',['as'=>'search','uses'=>'userController@search']);
 
 		Route::get('contact',['as'=>'contact','uses'=>'userController@contact']);
+		Route::post('contact',['as'=>'post_contact','uses'=>'userController@postContact']);
 
 		Route::get('about',['as'=>'about','uses'=>'userController@about']);
 
